@@ -93,7 +93,7 @@ a {
     );
     background-position: center;
     background-size: cover;
-    height: 150px;
+    height: 100px;
     width: 100%;
     margin: 0;
 }
@@ -113,6 +113,8 @@ main {
 h2 {
     border-right: 5px solid darkblue;
     border-top: none;
+    padding: 20% 5%;
+    text-align: right;
 }
 
 #About-Me {
@@ -169,6 +171,8 @@ h2 {
     h2 {
         border-top: 5px solid darkblue;
         border-right: none;
+        padding: 0%;
+        text-align: center;
      }
 }
 
