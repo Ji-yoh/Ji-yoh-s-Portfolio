@@ -1,1 +1,184 @@
+  /* 
+
+ 
+ main {
+    display: grid;
+ }
+
+ section {
+    display: grid;
+ }
+
+ /*Reviewed MDN docs and learned about grid template areas, will try using */
+ /*#About-Me {
+    grid-area: About-Me;
     
+    
+ }
+
+ #Projects {
+    grid-area: Projects;
+    
+ }
+
+ #Contact {
+    grid-area: Contacts;
+    
+ }
+
+ h2 {
+    border-top: 5px solid darkblue;
+ }
+ 
+/* Added media screen for responsive layout */ /*
+@media screen and (min-width: 500px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "header header"
+        "About-Me About-Me-Content"
+        "Projects Projects-Content"
+        "Contact Contact-Info";
+        
+    }
+
+   
+} *
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70%;
+}
+
+header {
+    background-color: dimgray;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+h1 {
+    margin: 10px;    
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    gap: 3em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px;
+
+}
+
+#banner {
+    background-image: linear-gradient(
+        darkblue 25%,
+        lightblue 75%
+    );
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "About-Me"
+    "About-Me-Content"
+    "Projects"
+    "Projects-Content"
+    "Contact"
+    "Contact-Info"
+}
+
+h2 {
+    border-right: 5px solid darkblue;
+    border-top: none;
+}
+
+#About-Me {
+    grid-area: About-Me;
+}
+
+#About-Me-Content {
+    grid-area: About-Me-Content;
+}
+
+#my-photo {
+    height: auto;
+    width: 200px;
+    display: flex;
+}
+
+#my-photo img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#Projects {
+    grid-area: Projects;
+}
+
+#Projects-Content {
+    grid-area: Projects-Content;
+}
+
+#Contact {
+    grid-area: Contact;
+}
+
+#Contact-Info {
+    grid-area: Contact-Info;
+}
+
+@media screen and (max-width: 500px) {
+    #banner {
+        background-image:none;
+        background-position: 0% 0%;
+        height: 0px;
+        width: 0px;
+    }
+
+    #banner img {
+        background-image:none;
+        background-position: 0% 0%;
+        height: 0px;
+        width: 0px;
+    }
+
+    h2 {
+        border-top: 5px solid darkblue;
+        border-right: none;
+     }
+}
+
+@media (min-width: 500px){
+    main {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "About-Me  About-Me-Content"
+        "Projects  Projects-Content"
+        "Contact  Contact-Info";
+    }
+
+}

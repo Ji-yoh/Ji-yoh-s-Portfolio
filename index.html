@@ -5,33 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ji-yoh's Portfolio</title>
-    <link rel="stylesheet" link="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
     <!--Created header box elements for name, subtitle, and page nav links-->
-    <header>
-        <h1>Portfolio</h1>
-        <box>
-            <p>Name</p>
-            <p>Subtitle</p>
-        </box>
-        <box>
-            <nav>About Me</nav>
-            <nav>Projects</nav>
-            <nav>Contact</nav>
-        </box>
-        
-    </header>
+        <header>
+            <h1>Ji-yoh</h1>
+            <nav>
+                <a href="#About-Me">About Me</a>
+                <a href="#Projects">Projects</a>   
+                <a href="#Contacts">Contact</a>    
+            </nav>   
+        </header>
+    <figure id="banner">
+        <!--<img src="./assets/images/shinjuku.jpg">-->
+    </figure>
     <!--Need to style inline with | break on the left of the page to match mock up-->
     <main>
-        <section>
-            About Me
+        <section id="About-Me">
+            <h2>About Me</h2>
         </section>
-        <section>
-            Projects
+        <section id="About-Me-Content">
+            <p>
+                About me paragraph text
+            </p>
+            <figure id="my-photo">
+                <img src="./assets/images/resize_ranger.jpg">
+            </figure>
         </section>
-        <section>
-            Contact
+            
+
+        <section id="Projects">
+            <h2>Projects</h2>
+            <p id="Projects-Content">
+                Projects
+            </p>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <ul id="Contact-Info">
+                <li>Email</li>
+                <li>Github</li>
+            </ul>
         </section>
     </main>
 
