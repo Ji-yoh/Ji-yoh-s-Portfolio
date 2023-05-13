@@ -26,3 +26,11 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+
+## Development
+```
+Referred to MDN documents to implement grid layout for main structure of the page. Within the grid areas used flexboxes to organize items. Referred to past challenges to get ideas on styling. Decided to make banner disappear on smaller pages.
+
+The intent is to refine the styling as skills get more refined but basic functionality should be added. Currently a tribute to Geocities.
+
+![Screenshot](./assets/images/final%20page.png)
